@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DashBoard</title>
+</head>
+<body class="body">
+    <nav class="navbar">
+        <div class="logo">
+            <h4>DashBoard</h4>
+        </div>
+
+        <ul class="lista">
+            <li><img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-home-miscellaneous-kiranshastry-gradient-kiranshastry.png" id='home' /> <em>HOME</em></li>
+            <li><img src="https://img.icons8.com/nolan/64/new-contact.png" id="contato"/> <em>CONTATOS</em></li>
+            <li><img src="https://img.icons8.com/nolan/64/client-management.png" id="cliente"/> <em>CLIENTES</em></li>
+        </ul>
+    </nav>
+    <main class="container">
+   <div class="primeiroContainer">
+
+    <div class="main">
+        <h1>Faturamento (R$ Milhões)</h1>
+        <canvas id='first-chart' height="120px"></canvas>
+    </div>
+
+    <div class="main">
+        <h1>Quantidade de vendas por mês</h1>
+        <canvas id='bars' height="120px"></canvas>
+    </div>
+
+   </div>
+
+   <div class="segundoContainer">
+        <div class="main_secundario">
+            <h1>Converção de clientes</h1>
+            <canvas id='nut'></canvas>
+        </div>
+
+        <div class="main_secundario">
+            <h1>Entrada de novos clientes</h1>
+            <canvas id='nofill' height="120px"></canvas>
+        </div>
+   </div>
+</main>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+   <script src='script.js'></script>
+   <script src="graphTwo.js"></script>
+</body>
+</html>
+
+
